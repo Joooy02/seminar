@@ -1,26 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>SEMINAR</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SEMINAR</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f6f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    nav {
+      background: #007bff;
+      padding: 1rem;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li:hover {
+      color: #ffdd57;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    section#Home {
+      border-left: 5px solid #007bff;
+    }
+
+    section#About {
+      border-left: 5px solid #28a745;
+    }
+
+    section#Contact {
+      border-left: 5px solid #dc3545;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  </style>
 </head>
 <body>
-	<nav>
-		<ul>
-			<li>Home</li>
-			<li>About</li>
-			<li>Contact</li>
-		</ul>
-	</nav>
-	<section id="Home">
-		<p> I am Michaela Joy T. Sumaylo </p>
-	</section>
-	<section id ="About">
-		<p>Graduate from Mindanao State University - Buug, BSIT Major in Database Systems</p>
-	</section>
-	<section id="Contact">
-		<p>Contact us at +639102869244</p>
-	</section>
+  <nav>
+    <ul>
+      <li onclick="document.getElementById('Home').scrollIntoView({behavior: 'smooth'});">Home</li>
+      <li onclick="document.getElementById('About').scrollIntoView({behavior: 'smooth'});">About</li>
+      <li onclick="document.getElementById('Contact').scrollIntoView({behavior: 'smooth'});">Contact</li>
+    </ul>
+  </nav>
+
+  <section id="Home">
+    <p>I am <strong>Michaela Joy T. Sumaylo</strong>.</p>
+  </section>
+
+  <section id="About">
+    <p>Graduate from <strong>Mindanao State University - Buug</strong>, BSIT Major in Database Systems.</p>
+  </section>
+
+  <section id="Contact">
+    <p>Contact us at <strong>+63 910 286 9244</strong></p>
+  </section>
 </body>
 </html>
